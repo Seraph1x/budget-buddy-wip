@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: url(https://cdn.pixabay.com/photo/2022/01/21/11/37/pandas-6954571_1280.jpg);
+            background-size: 300px;
+        }
+        div {
+            background: rgba(255, 255, 255, 0.767);
+            text-shadow: 0px 0px 1px white;
+            font-weight: bold;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="off">
+
+        <input type="text" id="amount" name="amount" autocomplete="off">
+
+        <select id="incomesource" name="incomesource">
+            <option value="trade">trade</option>
+            <option value="ds">ds</option>
+            <option value="games">games</option>
+        </select>
+        
+        <button type="button" id="click" onclick='makeresult()'>click</button>
+    </form>
+
+    <div id="date">date</div>
+    <div id="trades_total">trades total</div>
+    <div id="games_total">games total</div>
+    <div id="overall_total">overall total</div>
+
+
+    <button type="button" id="click" onclick='clearstorage()'>click</button>
+    <br>
+    <button type="button" id="click" onclick='showdata()'>show</button>
+    <script src="script.js"></script>
+</body>
+</html>
